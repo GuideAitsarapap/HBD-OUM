@@ -736,7 +736,7 @@ const modalDesc = document.getElementById('modalDesc');
 function openDetailModal(p) {
   modalImg.src = p.src;
   modalTitle.textContent = p.title;
-  modalDesc.textContent = `รูปแห่งความทรงจำ: ${p.caption} เป็นอีกหนึ่งช่วงเวลาดีๆ ที่อยู่เคียงข้างกัน`;
+  modalDesc.textContent = `${p.caption}`;
   modal.classList.add('active');
 }
 function closeDetailModal() { modal.classList.remove('active'); }
